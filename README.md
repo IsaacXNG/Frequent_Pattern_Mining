@@ -6,14 +6,6 @@ Xiaoning Guo
 
 # Contents
 
-```
- How to Run
- Data Cleaning Choices (e.g., binning)
- Proof that my Program Works
- Expected Output
- Program Design
- Comparison of Algorithms
-```
 # HOW TO RUN
 
 **Requirements** : Python 3.6 +, Anaconda installed and Path Environment Set
@@ -138,65 +130,4 @@ recursively until single paths are found. Then all combinations that form from t
 are the frequent patterns with the count of its last node. The tree structures and linked lists
 from the header table allow for very fast traversal, thus it can find frequent patterns much
 faster.
-
-As shown below, we see that FP-Growth is magnitudes faster as we lower the minimum
-support count. We see that the runtimes for FP-growth grow a lot slower than Apriori:
-
-```
-Runtime Table
-```
-```
-Support/Algorithm Apriori FP-Growth
-```
-```
-1000 I will be dead by then 17.23 7 s
-```
-```
-2000 Longer than I can wait 7.806s
-```
-```
-3000 Longer than I can wait 5.001s
-```
-```
-5000 Longer than I can wait 3.491s
-```
-```
-7000 Longer than I can wait 2.934s
-```
-```
-9000 86.19 7 s 2.364s
-```
-```
-10000 63.583s 2.108s
-```
-```
-11000 40.484s 1.827s
-```
-```
-12000 31.178s 1.679s
-```
-```
-13000 24.16 4 s 1. 466 s
-```
-```
-14000 20.03 4 s 1. 303 s
-```
-```
-16000 14.679s 1.273s
-```
-```
-18000 9.0727s 1.2 37 s
-```
-```
-20000 5.917s 1.206s
-```
-```
-22000 3.383s 1.104s
-```
-```
-24000 2.242s 1.054s
-```
-```
-26000 1.255s 0.925s
-```
 
